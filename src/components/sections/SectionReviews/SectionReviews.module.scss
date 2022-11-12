@@ -1,0 +1,83 @@
+@import '/src/assets/sass/vars.scss';
+
+.section-reviews{
+  position: relative;
+
+  &__content{
+    position: relative;
+    z-index: 2;
+  }
+
+  &__subtitle{
+    margin-top: 20px;
+  }
+
+  &__items{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (max-width: $xlg) {
+      margin-top: 70px;
+    }
+
+    @media (max-width: $lg) {
+      margin-top: 60px;
+    }
+
+    @media (max-width: $md) {
+      margin-top: 50px;
+    }
+  }
+
+  &__Card{
+    background: $lightorange;
+    border-radius: 12px;
+    padding: 30px;
+    height: 100%;
+
+    &_content{
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+
+    &_head{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 10px;
+    }
+
+    &_name{
+      font-weight: 700;
+    }
+
+    &_date{
+      font-size: .75em;
+    }
+
+    &_stars{
+      display: flex;
+      flex-direction: row;
+      column-gap: 15px;
+    }
+
+    &_text{
+      position: relative;
+      max-height: 120px;
+      overflow: hidden;
+      font-size: 16px;
+
+      &::before{
+        content: '...';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: $lightorange;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import '/src/assets/sass/vars.scss';
+
+.danger{
+  position: sticky;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: $lightgreen;
+  padding: 15px 0;
+
+  @media (max-width: $md) {
+    padding: 8px 0;
+  }
+  
+  &__picture{
+    margin: 0 auto;
+    display: block;
+    max-width: 900px;
+  }
+}

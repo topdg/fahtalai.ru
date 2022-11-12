@@ -1,0 +1,62 @@
+@import '/src/assets/sass/vars.scss';
+
+
+.Menu{
+
+  &-header{
+
+    @media (max-width: $md) {      
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      background: #fff;
+      padding: 30px;
+      transform: translateY(calc(-100% - 92px));
+      transition: .4s ease;
+    }
+
+    & .logo{
+      position: relative;
+      z-index: 5;
+    }
+  }
+
+  &-active{
+    z-index: 2;
+    transform: translateY(0);
+  }
+
+  &-footer{
+
+    & .Menu__link{
+      color: #fff;
+
+      &:hover{
+        color: $orange
+      }
+    }
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    padding-left: 0;
+
+    @media (max-width: $md) {
+      flex-direction: column;
+      row-gap: 10px;
+    }
+  }
+
+  &__item{
+    list-style: none;
+  }
+
+  &__link{
+    color: $black;
+    font-size: 16px;
+  }
+}

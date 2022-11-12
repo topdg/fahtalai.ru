@@ -1,0 +1,57 @@
+@import "/src/assets/sass/vars.scss";
+
+.header{
+  position: absolute;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: #fff;
+
+  @media (max-width: $md) {
+    z-index: 1002;
+    height: 64px;
+  }
+
+  @keyframes showHeader {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  &-fixed{
+    background: #fff;
+    position: fixed;
+    transform: translateY(-100%);
+    animation: showHeader .3s ease forwards;
+  }
+
+  &__row{
+    display: flex;
+    flex-direction: space-between;
+  }
+
+  &__content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__buttonLink{
+    @media (max-width: $md) {
+      position: absolute;
+      z-index: 3;
+      right: 80px;
+    }
+  }
+}

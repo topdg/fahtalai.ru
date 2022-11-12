@@ -1,0 +1,133 @@
+@import '/src/assets/sass/vars.scss';
+
+.section-sostav{
+  position: relative;
+  overflow: hidden;
+
+  &__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  &__content{
+    max-width: 820px;
+
+    @media (max-width: $xlg) {
+      max-width: 640px;
+    }
+
+    @media (max-width: $lg) {
+      max-width: 540px;
+    }
+
+    @media (max-width: $md) {
+      max-width: 100%;
+    }
+  }
+
+  &__picture{
+    position: absolute;
+    z-index: 2;
+    left: -2%;
+    top: 40%;
+    transform: translateY(-50%);
+    max-height: 100%;
+    max-width: 400px;
+
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+
+  &__bg_block{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 30%;
+    transform: translateY(-50%);
+    height: 50%;
+    max-width: 400px;
+    width: 100%;
+    background: $lightorange;
+    border-radius: 0 24px 24px 0;
+
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+
+  &__text{
+    margin-top: 80px;
+
+    @media (max-width: $xlg) {
+      margin-top: 70px;
+    }
+
+    @media (max-width: $lg) {
+      margin-top: 60px;
+    }
+
+    @media (max-width: $md) {
+      margin-top: 50px;
+    }
+  }
+
+  &__main{
+    margin-top: 40px;
+    color: #3D5F1B;
+    font-size: .75em;
+
+    @media (max-width: $xlg) {
+      margin-top: 30px;
+    }
+
+    @media (max-width: $md) {
+      margin-top: 20px;
+      font-size: .88em;
+    }
+  }
+
+  &__items{
+    margin-top: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+
+    @media (max-width: $xlg) {
+      margin-top: 50px;
+      row-gap: 50px;
+    }
+
+    @media (max-width: $lg) {
+      margin-top: 40px;
+      row-gap: 40px;
+    }
+
+    @media (max-width: $md) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 30px;
+      row-gap: 10px;
+    }
+  }
+
+  &__item{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    max-width: 45%;
+    font-size: .75em;
+
+    @media (max-width: $md) {
+      max-width: 100%;
+      font-size: .88em;
+    }
+
+    &_name{
+      color: #729154;
+    }
+  }
+}

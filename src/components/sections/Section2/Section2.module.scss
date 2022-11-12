@@ -1,0 +1,95 @@
+@import '/src/assets/sass/vars.scss';
+
+.section-2{
+  overflow: hidden;
+
+  &__content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    row-gap: 80px;
+    max-width: 75%;
+    
+    @media (max-width: $sm) {
+      padding-top: 30px;
+      max-width: 100%;
+      row-gap: 20px;
+    }
+  }
+
+  &__items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (max-width: $md) {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+  }
+
+  &__item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+    min-width: 40%;
+
+    @media (max-width: $md) {
+      min-width: auto;
+    }
+
+    @media (max-width: $sm) {
+      column-gap: 15px;
+    }
+
+    &_picture{
+      width: 70px;
+
+      @media (max-width: $sm) {
+        width: 50px;
+      }
+    }
+
+    &_img{
+      width: 100%;
+    }
+
+    &_content{
+      width: calc(100% - 90px);
+
+      @media (max-width: $sm) {
+        width: calc(100% - 65px);
+      }
+    }
+
+    &_title{
+      font-weight: 700;
+    }
+  }
+
+  &__picture{
+    position: absolute;
+    bottom: -20px;
+    left: 100%;
+    width: 754px;
+    
+    @media (max-width: $xlg) {
+      width: 500px;
+    }
+    
+    @media (max-width: $lg) {
+      width: 400px;
+    }
+
+    @media (max-width: $sm) {
+      position: relative;
+      bottom: inherit;
+      left: inherit;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+}

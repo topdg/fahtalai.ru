@@ -1,0 +1,52 @@
+@import './vars.scss';
+
+.buttonLink{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  transition: .4s ease;
+  padding: 10px 40px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  
+  @media (max-width: $lg) {
+    padding: 16px 32px;
+  }
+  
+  @media (max-width: $md) {
+    padding: 10px 20px;
+  }
+
+  &-blue{
+    background: #0066FF;
+    color: #fff;
+    
+    &:hover{
+      background: darken(#0066FF, 10%);
+      color: #fff;
+    }
+  }
+
+  &-orange{
+    background: $orange;
+    color: #fff;
+    
+    &:hover{
+      background: darken($orange, 10%);
+      color: #fff;
+    }
+  }
+
+  &-lightgreen{
+    background: $lightgreen;
+    color: $green;
+    
+    &:hover{
+      background: $green;
+      color: #fff;
+    }
+  }
+}

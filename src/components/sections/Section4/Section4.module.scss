@@ -1,0 +1,69 @@
+@import '/src/assets/sass/vars.scss';
+
+.section-4{
+
+  &__content{
+    max-width: 1045px;
+  }
+
+  &__text{
+    margin-top: 80px;
+
+    @media (max-width: $xlg) {
+      margin-top: 70px;
+    }
+
+    @media (max-width: $lg) {
+      margin-top: 60px;
+    }
+
+    @media (max-width: $md) {
+      margin-top: 50px;
+    }
+  }
+
+  &__row{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 60px;
+
+    @media (max-width: $xlg) {
+      margin-top: 50px;
+      row-gap: 50px;
+    }
+
+    @media (max-width: $lg) {
+      margin-top: 40px;
+      row-gap: 40px;
+    }
+
+    @media (max-width: $md) {
+      margin-top: 30px;
+      row-gap: 30px;
+    }
+
+    @media (max-width: $sm) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+  }
+
+  &__text{
+
+    & span{
+      color: $green;
+    }
+  }
+
+  &__picture{
+    width: 50%;
+
+    @media (max-width: $sm) {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+}

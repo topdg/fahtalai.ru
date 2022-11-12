@@ -1,0 +1,59 @@
+@import '/src/assets/sass/vars.scss';
+
+.section-6{
+  &__items{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 16px;
+
+    @media (max-width: $xlg) {
+      margin-top: 70px;
+    }
+
+    @media (max-width: $lg) {
+      margin-top: 60px;
+    }
+
+    @media (max-width: $md) {
+      margin-top: 50px;
+      column-gap: 8px;
+    }
+
+    @media (max-width: $sm) {
+      flex-wrap: wrap;
+      row-gap: 20px;
+      justify-content: space-evenly;
+    }
+  }
+
+  &__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    max-width: 236px;
+
+    @media (max-width: $sm) {
+      max-width: auto;
+      width: 30%;
+    }
+
+    @media (max-width: $xs) {
+      width: calc(50% - 20px);
+    }
+
+    &_picture{
+      width: 78px;
+    }
+
+    &_text{
+      text-align: center;
+    }
+
+    &_img{
+      width: 100%;
+    }
+  }
+}

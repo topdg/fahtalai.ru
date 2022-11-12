@@ -1,0 +1,30 @@
+.list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  &-orange{
+    & .list__item{
+      &::before{
+        background: $orange;
+      }
+    }
+  }
+
+  &__item{
+    position: relative;
+    padding-left: 40px;
+
+    &::before{
+      content: '';
+      position: absolute;
+      left: .2em;
+      top: .6em;
+      display: block;
+      width: 9px;
+      height: 9px;
+      border-radius: 100%;
+      background: $green;
+    }
+  }
+}
