@@ -1,7 +1,6 @@
 import { GatsbyImage, StaticImage } from 'gatsby-plugin-image'
 import React, { FC } from 'react'
 import { SectionReviewsProps } from './SectionReviews.types'
-import { graphql, useStaticQuery } from 'gatsby'
 
 import * as styles from './SectionReviews.module.scss'
 
