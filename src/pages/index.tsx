@@ -41,5 +41,5 @@ export default IndexPage
 
 export const Head: HeadFC = () => 
   <>
-    <title>ФаТалайДжон - травяные таблетки от гриппа и простуды</title>
+    <title>Фа Талай Джон - травяные таблетки от гриппа и простуды</title>
   </>
