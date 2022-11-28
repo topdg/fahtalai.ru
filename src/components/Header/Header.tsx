@@ -5,7 +5,6 @@ import { Logo } from "../Logo/Logo";
 import { cls } from "../../utils/utils";
 import { HeaderProps } from "./Header.types";
 import { ButtonLink } from "../../utils/components/ButtonLink/ButtonLink";
-import ym from 'react-yandex-metrika';
 
 import * as styles from './Header.module.scss';
 

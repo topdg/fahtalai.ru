@@ -4,7 +4,6 @@ import { Section } from '../../../utils/components/Section/Section'
 import { ButtonLink } from '../../../utils/components/ButtonLink/ButtonLink'
 import { cls } from '../../../utils/utils'
 import { StaticImage } from 'gatsby-plugin-image'
-import ym from 'react-yandex-metrika';
 
 import * as styles from './Section1.module.scss'
 

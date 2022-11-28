@@ -6,7 +6,6 @@ import { Title } from '../../../utils/components/Title/Title'
 import { StaticImage } from 'gatsby-plugin-image'
 import { ButtonLink } from '../../../utils/components/ButtonLink/ButtonLink'
 import { cls } from '../../../utils/utils'
-import ym from 'react-yandex-metrika';
 
 import * as styles from './Section8.module.scss'
 

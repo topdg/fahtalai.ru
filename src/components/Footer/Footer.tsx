@@ -5,7 +5,6 @@ import { Container } from "../../utils/components/Container/Container"
 import { cls } from "../../utils/utils"
 import { Menu } from "../Menu/Menu"
 import { Logo } from "../Logo/Logo"
-import ym from 'react-yandex-metrika';
 
 import * as styles from "./Footer.module.scss"
 
