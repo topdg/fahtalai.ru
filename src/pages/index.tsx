@@ -13,6 +13,7 @@ import { Section6 } from "../components/sections/Section6/Section6"
 import { SectionUse  } from "../components/sections/SectionUse/SectionUse"
 import { Section8 } from "../components/sections/Section8/Section8"
 import { SectionBottom } from "../components/sections/SectionBottom/SectionBottom"
+import { YMInitializer } from "react-yandex-metrika"
 
 
 const IndexPage: FC<PageProps> = () => {
@@ -42,4 +43,5 @@ export default IndexPage
 export const Head: HeadFC = () => 
   <>
     <title>Фа Талай Джон - травяные таблетки от гриппа и простуды</title>
+    <YMInitializer accounts={[91414803]} options={{clickmap: true, webvisor: true, trackLinks: true, trackHash: true, accurateTrackBounce: true, afterBody: true, defer: false}}></YMInitializer>
   </>
