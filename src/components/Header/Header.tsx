@@ -35,7 +35,7 @@ export const Header : FC<HeaderProps> = ( { active = false, toggleMenu } ) => {
         <div className={styles.header__content}>
           <Logo />
           <Menu type="header" active={active} toggleMenu={toggleMenu} />
-          <ButtonLink attributes={{onClick: () => ym('reachGoal','click_buy_header')}}  href="https://www.ozon.ru/search/?deny_category_prediction=true&from_global=true&text=%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5+%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2%D0%BE&product_id=743149088" target="blank" className={cls("buttonLink-orange", styles.header__buttonLink)}>Купить</ButtonLink>
+          <ButtonLink attributes={{onClick: () => ym(91414803, 'reachGoal','click_buy_header')}}  href="https://www.ozon.ru/search/?deny_category_prediction=true&from_global=true&text=%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5+%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2%D0%BE&product_id=743149088" target="blank" className={cls("buttonLink-orange", styles.header__buttonLink)}>Купить</ButtonLink>
         </div>
       </Container>
     </header>

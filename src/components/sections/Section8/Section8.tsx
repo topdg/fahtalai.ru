@@ -59,7 +59,7 @@ export const Section8 : FC = ( ) => {
           <div className={ styles.section8__main }>
               <div className={ styles.section8__main_title }>Набор Фа Талай Джон<br />2 в 1 по специальной цене</div>
               <div className={ styles.section8__main_links }>
-                <ButtonLink attributes={{onClick: () => ym('reachGoal','click_buy_ozon')}} href="https://www.ozon.ru/search/?deny_category_prediction=true&from_global=true&text=%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5+%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2%D0%BE&product_id=743149088" target="_blank" className="buttonLink-blue">купить на OZON</ButtonLink>
+                <ButtonLink attributes={{onClick: () => ym(91414803, 'reachGoal','click_buy_ozon')}} href="https://www.ozon.ru/search/?deny_category_prediction=true&from_global=true&text=%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5+%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2%D0%BE&product_id=743149088" target="_blank" className="buttonLink-blue">купить на OZON</ButtonLink>
                 <a href="#" className={ styles.section8__main_link }>узнать подробности</a>
               </div>
               <div className={ styles.section8__main_picture }>
