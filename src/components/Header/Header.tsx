@@ -5,6 +5,7 @@ import { Logo } from "../Logo/Logo";
 import { cls, yaMetrikaGoal } from "../../utils/utils";
 import { HeaderProps } from "./Header.types";
 import { ButtonLink } from "../../utils/components/ButtonLink/ButtonLink";
+ import {} from 'gatsby-plugin-yandex-metrika';
 
 import * as styles from './Header.module.scss';
 
