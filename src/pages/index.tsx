@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react"
+import React, { FC, useEffect, useState } from "react"
 import { HeadFC, PageProps, Script } from "gatsby"
 import { Section2 } from "../components/sections/Section2/Section2"
 import { Layout } from "../components/Layout/Layout"
@@ -13,11 +13,14 @@ import { Section6 } from "../components/sections/Section6/Section6"
 import { SectionUse  } from "../components/sections/SectionUse/SectionUse"
 import { Section8 } from "../components/sections/Section8/Section8"
 import { SectionBottom } from "../components/sections/SectionBottom/SectionBottom"
+import { yaMetrikaHit } from "../utils/utils"
 
 
 const IndexPage: FC<PageProps> = () => {
 
-  const [metrika, setMetrika] = useState(false);
+  useEffect(() => {
+    yaMetrikaHit(window.location.href);
+  }, []);
 
   return (
     <Layout>
