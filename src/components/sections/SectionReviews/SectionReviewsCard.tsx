@@ -13,7 +13,7 @@ export const SectionReviewsCard : FC<SectionReviewsProps> = ({ name, date, logo,
           <div className={ styles.sectionReviews__Card_info }>
             {
               name &&
-              <div className={ styles.sectionReviews__Card_name }>{ name }</div>
+              <div className={ styles.sectionReviews__Card_name } dangerouslySetInnerHTML={ { __html: name} } />
             }
             {
               date &&
@@ -38,7 +38,7 @@ export const SectionReviewsCard : FC<SectionReviewsProps> = ({ name, date, logo,
             }
           </div>
         }
-        <div className={ styles.sectionReviews__Card_text }> { text } </div>
+        <div className={ styles.sectionReviews__Card_text } dangerouslySetInnerHTML={ { __html: text} } />
       </div>
     </div>
   )
